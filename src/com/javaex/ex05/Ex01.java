@@ -6,7 +6,7 @@ import java.util.Set;
 public class Ex01 {
 
 	public static void main(String[] args) {
-		Set<Integer> iSet= new HashSet<Integer>();//제네릭으로 선언해줘야함. 범용으로 만들어놨는데 오만가지 다 만들어놔가지구<>안에는 주소로 줘야함. 나중에 바꿔치기할때 Set에만 있는거 쓰려구(다시 들어보기- 오전 1교시 초반)
+		Set<Integer> iSet= new HashSet<Integer>();//제네릭으로 선언해줘야함. 범용으로 만들어놨는데 오만가지 다 만들어놔가지구<>안에는 주소로 줘야함. 나중에 바꿔치기할때 Set에만 있는거 쓰려구
 		
 		//그전에는 ex04참고) pList.add(p01);로 ()안에 주소로 관리를 했음. <Point>를 관리하는것
 		//그래서 <Integer>로 선언했으니 int값이 아닌 주소를 넣어줘야함. 

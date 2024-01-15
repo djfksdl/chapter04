@@ -36,7 +36,7 @@ public class Point {
 	
 	//메소드-일반
 	@Override
-	public String toString() { //이거 안짜면 주소@어쩌고가 나옴(Object꺼 쓰는거라서)
+	public String toString() { //이거 안짜면(오버라이드 안하면) 주소@어쩌고가 나옴(Object꺼 쓰는거라서)
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 	
@@ -47,7 +47,7 @@ public class Point {
 			return true;
 		if (obj == null)//
 			return false;
-		if (getClass() != obj.getClass()) //클래스 이름 다르면
+		if (getClass() != obj.getClass()) //'클래스 이름 다르면'
 			return false;
 		Point other = (Point) obj;
 		return x == other.x && y == other.y;

@@ -28,7 +28,7 @@ public class PointApp {
 		System.out.println(pMap.toString());
 		
 		//key 리스트:[정우성, 이효리, 박명수] -키를 관리하고 있음
-//		pMap.keySet();으로 관리하고 있음. 그러면 key 리스트를 줌 -> 주소임? 4교시 중간쯤
+//		pMap.keySet();으로 관리하고 있음. 그러면 key 리스트를 줌 -> 주소임
 		Set<String> keys = pMap.keySet(); //중복검사하려면 Set으로 관리함.주머니에 이름만 넣어놓고 있다는 Set의 개념을 활용해서!
 
 		//키 전체출력하기
