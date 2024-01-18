@@ -39,14 +39,14 @@ public class MyListApp {
 		System.out.println(pList.toString());
 		
 		//원관리
-		MyList<Circle> clist = new MyList<Cricle>();
+		MyList<Circle> cList = new MyList<Circle>();
 		Circle c01 = new Circle(100);
 		Circle c02 = new Circle(200);
 		
 		cList.add(c01);
 		cList.add(c01);
 		cList.add(c01);
-		System.out.println(cList.toString);
+		System.out.println(cList.toString());
 		
 		//틀은 하나 만들어서 계속 복사해서 써두자
 }

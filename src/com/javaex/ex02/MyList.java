@@ -27,14 +27,13 @@ public class MyList {
 		oArray[crtPos]= o;
 //		crtPos = crtPos +1;
 		crtPos += 1;
-		
-		public int size() {
-			return crtPos;
-		}
-		public Object get (int index) {
-			return oArray[index];
-		}
 
+	}
+	public int size() {
+		return crtPos;
+	}
+	public Object get (int index) {
+		return oArray[index];
 	}
 	
 
