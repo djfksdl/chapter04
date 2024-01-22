@@ -4,7 +4,7 @@ public class MyListApp {
 	public static void main(String[] args) {
 		
 		// 점 관리
-		MyList pList = new MyList();//범용이지만 이건 포인트 관리한다. = MyList<Point>:제네딕
+		MyList pList = new MyList();//범용이지만 이건 포인트 관리한다. = MyList<Point>:제네릭
 		Point p01 = new Point(2,2);
 		Point p02 = new Point(5,5);
 		Point p03 = new Point(10,10);

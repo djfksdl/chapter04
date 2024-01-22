@@ -22,7 +22,7 @@ public class PointList {
 	//메소드-일반
 	
 	public void add(Point p) {
-		//배열새로 만들고 이전거 복사하고 추가하고...
+		//배열 새로 만들고 이전거 복사하고 추가하고...
 		//pArray[0] = p;
 		
 		//현재 배열 개수 + 1 배열을 새로 만든다.
