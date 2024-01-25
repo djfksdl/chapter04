@@ -22,12 +22,12 @@ public class PointApp {
 		pSet.add(p04);
 //		System.out.println(pSet.toString());
 		
-		//주소가 같으면 hsahCode가 같으면 비교 안됨	- 3교시
+		//주소가 같으면 hsahCode가 같으면 비교 안됨	
 //		해쉬코드 같으면 같을 확률이 굉장히 높아짐 but 같다는 아님.
-//		다르면 1개만 비교해줘 검사가 필요없다. 
+//		다르면 1개만 비교함. 다른 검사가 필요없다. 
 		//같다,틀리다는 필드값을 비교하는것. 필드값으로 만들어냄
 		//해쉬코드 다르면 그냥 다른거. 같을 수가 없다. 다르다 확
-		//해쉬코드 만들어준 이유, 비교하려고??
+		//해쉬코드 만들어준 이유, 비교하려고
 		
 		/*for(Point p:pSet) {
 			System.out.println(p.hashCode()); 

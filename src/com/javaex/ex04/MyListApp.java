@@ -9,8 +9,8 @@ public class MyListApp {
 		// add(), size() ,get(), remove()
 //		ArrayList<Point> pList = new ArrayList<Point>(); -임포트해줘야함
 //		LinkedList<Point> pList = new LinkedList<Point>(); -임포트 해줘야함
-		//안에 알고리즘이 달라서그렇지 공통적으로 어레이나 링크드나 가지고있는 메소드가 있어서 바로 실행된다.(3개는!어레이나,링크드나 뭐 하나)- 근데 이름 다른 새로운 sAdd()는 Array만 만들어주면 나중에 링크드로 바꿔치기하면 그건 실행이 안됨
-		List<Point> pList = new LinkedList<Point>(); //섞어써주기 Linked나 ArrayList써주면 가려지면서 인터페이스안에 있는 3가지만 써줄 수 있음. 원래는 안가려짐. 섞어써주면 가려짐!
+		//안에 알고리즘이 달라서그렇지 어레이나 링크드가 공통적으로 가지고있는 메소드가 있어서 바로 실행된다.- 근데 이름 다른 새로운 sAdd()는 Array만 만들어주고 나중에 링크드로 바꿔치기하면 그건 실행이 안됨. 이건 그냥 내가 만든거라
+		List<Point> pList = new LinkedList<Point>(); //섞어써주기 Linked나 ArrayList써주면 가려지면서 인터페이스안에 있는 3가지만 써줄 수 있음. 원래는 안가려짐. 벋 섞어써주면 가려짐!
 		
 		Point p01 = new Point(2, 2);
 		Point p02 = new Point(3, 3);
@@ -24,7 +24,7 @@ public class MyListApp {
 		pList.add(p01); // 첫번째 4번째는 같은 주소를 가지고 있는것이다. 값이 아닌 주소!
 		
 		//안되는거 테스트중
-		//pList.add(c01); //오류가 남 와이??틀은 하나..
+		//pList.add(c01); //오류가 남 와이?? ->틀은 하나..
 
 		// 가변한다고 했으니 배열 크기가 어떻게 되는지 확인해보자 -> 값을 넣은만큼 크기가 변한다.
 		System.out.println("size: " + pList.size());
@@ -45,7 +45,7 @@ public class MyListApp {
 		System.out.println("==================");
 
 		// 전체 출력
-		for (int i = 0; i < pList.size(); i++) { // 배열이 아니라서 length를 못쓰고 있는 메소드이 size를 써야 길이를 알 수 있다.
+		for (int i = 0; i < pList.size(); i++) { // 배열이 아니라서 length()를 못쓰고 size()를 써야 길이를 알 수 있다.
 			System.out.println(pList.get(i).toString());
 		}
 
@@ -76,7 +76,7 @@ public class MyListApp {
 		
 		List<Integer> iList = new ArrayList<Integer>();//섞어쓰기. 나중에 바꿔쓸생각하면 섞어써서 가려주고 공통부분만 쓰게함
 		
-//		Integer i01 = new Integer(3); // 숫자를 관리하더라도 주소를 넣어야해서 대문자로 써줘야함. 그리고 클래스애들은 new안하고 바로 써줌 왼쪽에 있는 Integer의 규칙을 따름
+//		Integer i01 = new Integer(3); // 숫자를 관리하더라도 주소를 넣어야해서 대문자로 써줘야함. 그리고 클래스애들은 new안하고 바로 써줌. 왼쪽에 있는 Integer의 규칙을 따름
 //		Integer i02 = new Integer(6);
 		Integer i01 = 3;//숫자 3이 아닌 주소가 들어가있다고 생각해야함 (박싱)
 		Integer i02 = 6; //자동박싱
@@ -86,7 +86,7 @@ public class MyListApp {
 		
 		System.out.println(iList.toString());
 		
-//		iList.get(0).parseInt(null)//메소드에 접근할 수 있지만 parseInt는 static이기때문에 이렇게 쓰는건 옮지 않다.
+//		iList.get(0).parseInt(null)//메소드에 접근할 수 있지만(숫자3이 아닌 박싱으로 주소기때문) parseInt는 static이기때문에 이렇게 쓰는건 옮지 않다.
 		
 		
 	}

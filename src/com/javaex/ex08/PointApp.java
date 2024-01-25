@@ -13,7 +13,7 @@ public class PointApp {
 		Point p03 = new Point(12,22);
 		
 		pMap.put("정우성", p01); //얘네는 add역할을 하는게 put이다. 정우성의 실적이다. 관리하는 값p01을 넣어준다.
-		pMap.put("이효리", p02); //앞에는 String으로 관리한다고해서 그냥 숫자로 쓰면 오류남
+		pMap.put("이효리", p02); //앞에는 String으로 관리한다고하니 그냥 숫자로 쓰면 오류남
 		pMap.put("박명수", p03); 
 		
 		System.out.println(pMap.size());
@@ -24,7 +24,7 @@ public class PointApp {
 		
 		//좌표 같은게 같아도 상관없음. 얘는 값이 중복된거 들어가도 상관없음. 이름으로 구별할꺼니까
 		Point p04 = new Point(100, 100);
-		pMap.put("박명수", p04);//중복 상관없이 새로운걸로 수정된다는 개념으로 넣는다. 이름은 안겹치게 관리하는거임. 먼저 어? 키값이 같네. 하면 안돼!가 아니라 수정해버림
+		pMap.put("박명수", p04);//중복 상관없이 새로운걸로 수정된다는 개념으로 넣는다. 이름은 안겹치게 관리하는거임. 먼저 어? 키값이 같네. 하면 안돼!가 아니라 나중 값으로 수정해버림
 		System.out.println(pMap.toString());
 		
 		//key 리스트:[정우성, 이효리, 박명수] -키를 관리하고 있음

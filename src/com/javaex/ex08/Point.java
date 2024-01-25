@@ -58,7 +58,6 @@ public class Point {
 		int result = x*y;
 		return result;
 	}
-	//다른거 찾는 줄 알았는데 같은거?? 3교시 중간
 	
 	
 }
